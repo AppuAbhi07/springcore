@@ -6,7 +6,8 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan(basePackages = "com.abhi.scopes") // Scans components in the package
+@ComponentScan(basePackages = "com.abhi.scopes")
+ 
 public class LoggerServiceUsingClassLevelTest {
 
 	

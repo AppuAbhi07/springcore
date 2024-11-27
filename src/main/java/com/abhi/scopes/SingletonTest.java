@@ -12,6 +12,13 @@ public class SingletonTest {
 	        // Singleton Bean: Shared instance
 	        CurrencyConverter converter1 = context.getBean(CurrencyConverter.class);
 	        CurrencyConverter converter2 = context.getBean(CurrencyConverter.class);
+	        CurrencyConverter converter3 = context.getBean(CurrencyConverter.class);
+	        CurrencyConverter converter4 = context.getBean(CurrencyConverter.class);
+	        
+	        System.out.println(converter1.hashCode());
+	        System.out.println(converter2.hashCode());
+	        System.out.println(converter3.hashCode());
+	        System.out.println(converter4.hashCode());
 
 	        System.out.println("Are the instances the same? " + (converter1 == converter2)); // true
 
